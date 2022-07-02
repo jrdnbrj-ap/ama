@@ -1,16 +1,15 @@
-import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
-import inovaExperiencia from '../assets/videos/inova_experiencia.mp4'
-import inovaExperienciaOgg from '../assets/videos/inova_experiencia.ogg'
+import Home1 from '../assets/images/Home1.png'
 
 import logo from '../assets/images/logo.svg'
-import building3 from '../assets/images/building3.jpg'
+import building3 from '../assets/images/building3.png'
 import building5 from '../assets/images/building5.jpg'
 import building6 from '../assets/images/building6.jpg'
 import building7 from '../assets/images/building7.jpg'
 import building8 from '../assets/images/building8.jpg'
-import kairos from '../assets/images/kairos.svg'
+import logoBig from '../assets/images/logo-big.svg'
+import logoBigMobile from '../assets/images/logo-big-mobile.svg'
 
 import MisionVision from '../components/MisionVision'
 import ConctactForm from '../components/ContactForm'
@@ -18,22 +17,14 @@ import ConctactForm from '../components/ContactForm'
 
 const Home = () => {
 
-    const kairosForm = 'Concebido para la vida ejecutiva de alto rendimiento en la zona de la mas alta plusvalia de ciudad. KAIROS se destaca por su exclusividad, diseño y ubicación estrategica. Su diseño permite aprovechar al maximo la luminosidad y disfrutar de una hermosa vista en cada uno de los departamentos.'
-
-    useEffect(() => {
-        const video = document.getElementById('inova-experiencia')
-        video.play()
-    }, [])
+    const kairosForm = 'Somos una empresa cuyo punto focal gira alrededor del confort del cliente. Buscamos la complacencia de las necesidades y anhelos del usuario, apuntando siempre a la excelencia en cada uno de nuestros proyectos. Nuestro enfoque prioriza optimizar todo presupuesto para llegar a resultados de la mayor calidad, estética y comodidad.'
 
     return (
         <>
             <section className="video-container">
-                <video muted loop id="inova-experiencia">
-                    <source src={inovaExperiencia} type="video/mp4" />
-                    <source src={inovaExperienciaOgg} type="video/ogg" />
-                </video>
+                <img src={Home1} alt="Home" id="inova-experiencia" />
                 <div className="video-text">
-                    <h1>CONSTRUYENDO HOGARES</h1>
+                    <h1>SOMOS UNA EMPRESA ENFOCADA &nbsp; EN EL CONFORT DEL CLIENTE</h1>
                 </div>
                 <section className="socials">
                     <a 
@@ -58,18 +49,8 @@ const Home = () => {
             </section>
             <section className="home-info">
                 <img src={logo} alt="logo" />
-                <h2>ENFOCADOS EN CREAR AMBIENTES INNOVADORES</h2>
-                <p>Somos una compañía constructora que cuenta con amplia experiencia en la ejecución de proyectos de calidad y con la capacidad de enfrentar nuevos retos los cuales nos impulsan a seguir creciendo como una empresa innovadora que brinda las mejores condiciones de vida a los quiteños.</p>
-                <Link to="/contactos">
-                    <button id="llamanos">
-                        <span>QUIÉNES SOMOS</span>
-                    </button>
-                </Link>
-                <Link to="/proyectos">
-                    <button id="departamentos">
-                        <span>PROYECTOS</span>
-                    </button>
-                </Link>
+                <h2>SOMOS UNA EMPRESA ENFOCADA EN EL CONFORT DEL CLIENTE</h2>
+                <p>Seriedad, cumplimiento y eficiencia</p>
             </section>
             <div className="row" id="row-correction">
                 <div className="col-lg kairos-col">
@@ -79,9 +60,10 @@ const Home = () => {
                 </div>
                 <div className="col-lg kairos-col">
                     <div className="kairos-info">
-                        <img src={kairos} className="kairos-logo" alt="kairos" />
+                        <img src={logoBig} alt="kairos" className="mobile-hidden " />
+                        <img src={logoBigMobile} alt="kairos" className="kairos-mobile desktop-hidden" />
                         <p>{kairosForm}</p>
-                        <Link to="/contactos">
+                        {/* <Link to="/contactos">
                             <button id="contactanos">
                                 <span>Contáctanos</span>
                             </button>
@@ -90,11 +72,11 @@ const Home = () => {
                             <button id="ver-mas">
                                 <span>Ver más</span>
                             </button>
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
             </div>     
-            <section className="home-proyectos">
+            {/* <section className="home-proyectos">
                 <h2>PROYECTOS</h2>
                 <img src={building5} id="b-5" alt="building" />
                 <img src={building6} id="b-6" alt="building" />
@@ -103,11 +85,11 @@ const Home = () => {
                 <button>
                     <span>SIGUIENTE</span>
                 </button>
-            </section>
-            <section className="mision-vision-home">
+            </section> */}
+            {/* <section className="mision-vision-home">
                 <MisionVision />
-            </section>
-            <section className="home-nosotros">
+            </section> */}
+            {/* <section className="home-nosotros">
                 <h2>MÁS SOBRE NOSOTROS</h2>
                 <div className="row">
                     <div className="cola">
@@ -151,7 +133,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             <ConctactForm onHome />
         </>
     )

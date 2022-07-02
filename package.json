@@ -13,7 +13,8 @@
     "react-flickity-component": "^3.6.2",
     "react-router": "^6.3.0",
     "react-router-dom": "^6.0.2",
-    "react-scripts": "^4.0.3"
+    "react-scripts": "^4.0.3",
+    "sass": "^1.53.0"
   },
   "scripts": {
     "start": "react-scripts start",
