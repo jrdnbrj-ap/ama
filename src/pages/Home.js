@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 import Home1 from '../assets/images/Home1.png'
 
 import logo from '../assets/images/logo.svg'
