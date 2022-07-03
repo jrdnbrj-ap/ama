@@ -1,4 +1,4 @@
-import contactImage from '../assets/images/contactos.jpg'
+import contactImage from '../assets/images/building3.png'
 
 
 const ContactForm = ({ onHome }) => {
@@ -16,8 +16,8 @@ const ContactForm = ({ onHome }) => {
                 </div>
                 <div className="col-lg">
                     <form onSubmit={sendForm}>
-                        <h2>En INOVA Constructores</h2>
-                        <p>Deseamos escucharte, por favor comunicate con nosotros.</p>
+                        <h2>Unidad, cuidado con el ambiente, calidad, excelencia.</h2>
+                        <p>Estamos listo para atenderte</p>
                         <div className="form-floating">
                             <input type="text" className="form-control" placeholder="Kairos" />
                             <label>Nombre</label>

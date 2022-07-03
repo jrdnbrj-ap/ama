@@ -17,7 +17,7 @@ html, body {
 
 @media (max-width: 991px) {
     .mobile-hidden {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -289,17 +289,9 @@ html, body {
     }
 }
 
-#llamanos {
-    border-start-start-radius: 50px;
-}
-
-#departamentos {
-    border-end-end-radius: 50px;
-}
-
 .home-kairos {
     width: 100%;
-    min-height: 51rem;
+    min-height: 58rem;
     object-fit: cover;
 }
 
@@ -312,7 +304,6 @@ html, body {
 .kairos-info {
     display: table-cell;
     padding: 6rem;
-    height: 100%;
     vertical-align: middle;
 }
 
@@ -333,98 +324,191 @@ html, body {
     // text-align: justify;
 }
 
-.kairos-info button {
-    display: block;
-    background-color: #FFF;
-    font-size: 1.5rem;
-    font-family: Poppins Light;
-    border: 3px solid gray;
-    letter-spacing: 2px;
-    position: relative;
-    overflow: hidden;
-    padding: 0.5rem 2.5rem;
-    margin: 1rem 0;
-    z-index: 1;
-    color: gray;
-}
-
-.kairos-info a {
-    text-decoration: none;
-}
-
-.kairos-info button:after {
-    content: "";
-    position: absolute;
-}
-
-.kairos-info button:before {
-    content: "";
-    position: absolute;
-    top: -3px;
-    left: -3px;
-    width: 0%;
-    height: 111%;
-    background-color: gray;
-    transition: all 0.7s;
-    z-index: -1;
-}
-
-.kairos-info button:hover:before {
-    width: 105%;
-}
-
-.kairos-info button:hover span {
-    color: #FFF;
-    transition: all 0.7s;
-}
-
-.kairos-info #contactanos {
-    border-start-end-radius: 70px;
-    border-bottom-left-radius: 20px;
-}
-
-.kairos-info #ver-mas {
-    border-bottom-left-radius: 70px;
-    border-start-end-radius: 20px;
-}
-
 @media (max-width: 991px) {
     .home-kairos {
         min-height: 36rem;
     }
     .kairos-info {
-        padding: 6rem 6rem 6rem 6rem;
-        height: 100%;
+        padding: 6rem;
     }
     .kairos-info img {
-        width: 70%;
+        width: 80%;
         margin-bottom: 1rem;
     }
     .kairos-info p {
         font-size: 1.5rem;
         margin: 3rem 0 0 0;
     }
-    .kairos-info button {
-        font-size: 1.5rem;
-        letter-spacing: 2px;
-        padding: 0.5rem 2.5rem;
-        margin: 1rem 0;
+}
+
+@media (max-width: 680px) {
+    .kairos-info {
+        padding: 6rem 4rem;
+    }
+    .kairos-info img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .kairos-info p {
+        font-size: 1.4rem;
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 515px) {
     .kairos-info {
-        padding: 2rem 10% 4rem 10%;
-        height: 100%;
+        padding: 5rem 2.5rem;
     }
     .kairos-info p {
         font-size: 1.2rem;
     }
-    .kairos-info button {
-        font-size: 1.2rem;
-        letter-spacing: 2px;
-        padding: 0.5rem 1.8rem;
-        margin: 1rem 0;
+}
+
+.home-services {
+    .col-lg {
+        padding: 2rem;
+        display: table;
+        padding-left: 0;
+        padding-right: 0;
+        .services {
+            vertical-align: middle;
+            display: table-cell;
+            padding: 0 0 0 8rem;
+            label {
+                font-family: Poppins SemiBold;
+                font-size: 1.8rem;
+                color: #182A43;
+                letter-spacing: 5px;
+                margin-bottom: 2rem;
+            }
+            span {
+                display: block;
+                font-family: Poppins Light;
+                font-size: 1.1rem;
+                color: #182A43;
+                margin-bottom: 0;
+                strong {
+                    font-size: 1.5rem;
+                }
+                span {
+                    margin-left: 1.7rem;
+                }
+            }
+        }
+        img {
+            width: 70%;
+            margin: 6rem 2rem;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .home-services {
+        .col-lg {
+            .services {
+                padding: 3rem 10rem 0 10rem;
+                label {
+                    font-size: 2.3rem;
+                }
+                span {
+                    font-size: 1.3rem;
+                }
+            }
+            img {
+                width: 50%;
+                margin: 4rem auto;
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .home-services {
+        .col-lg {
+            .services {
+                padding: 3rem 6rem 0 6rem;
+                label {
+                    font-size: 2rem;
+                }
+                span {
+                    font-size: 1.2rem;
+                }
+            }
+            img {
+                margin: 2rem auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 545px) {
+    .home-services {
+        .col-lg {
+            .services {
+                padding: 3rem 3rem 0 3rem;
+                label {
+                    font-size: 2rem;
+                }
+                span {
+                    font-size: 1.1rem;
+                }
+            }
+            img {
+                width: 70%;
+                margin: 0.5rem auto 2rem auto;
+            }
+        }
+    }
+}
+
+.home-mision {
+    .col-lg {
+        display: table;
+        padding-left: 0;
+        padding-right: 0;
+        background-color: #E0D8D8;
+        .mision {
+            vertical-align: middle;
+            display: table-cell;
+            padding: 0 3rem 0 8rem;
+            label {
+                font-family: Poppins SemiBold;
+                font-size: 1.8rem;
+                color: #182A43;
+                letter-spacing: 5px;
+                margin-bottom: 2rem;
+            }
+            h2 {
+                font-family: Poppins SemiBold;
+                font-size: 2rem;
+                color: #182A43;
+                letter-spacing: 5px;
+                margin-bottom: 1.5rem;
+            }
+            p {
+                font-family: Poppins Light;
+                font-size: 1.2rem;
+                color: #182A43;
+                margin-left: 2rem;
+            }
+            button {
+                font-family: Poppins SemiBold;
+                font-size: 1.2rem;
+                color: #182A43;
+                letter-spacing: 5px;
+                margin-top: 2rem;
+                float: right;
+                background-color: transparent;
+                border: 0;
+                border-bottom: 3px solid #182A43;
+                padding: 0.1rem 1rem;
+                border-bottom-left-radius: 3px;
+                border-bottom-right-radius: 3px;
+            }
+        }
+        img {
+            width: 100%;
+        }
     }
 }
 
@@ -671,7 +755,7 @@ html, body {
 }
 
 .home-form {
-    background-color: #232323;
+    background-color: #182A43;
     color: #FFF;
 }
 
@@ -687,28 +771,27 @@ html, body {
 
 .home-form h2 {
     font-family: Poppins SemiBold;
-    font-size: 1.8rem;
-    text-align: justify;
+    font-size: 1.5rem;
+    // text-align: justify;
 }
 
 .home-form p {
     font-family: Poppins Light;
     font-size: 1rem;
     margin: 0 0 5% 0;
-    text-align: justify;
+    // text-align: justify;
 }
 
 .home-form form {
     font-family: Poppins Light;
-    margin: 10%;
+    margin: 10% 30% 10% 10%;
 }
 
 .home-form form .form-control {
     display: block;
     background-color: transparent;
-    border: 3px solid #FFF;
-    border-bottom-left-radius: 38px;
-    border-top-right-radius: 18px;
+    border: none;
+    border-bottom: 3px solid #FFF;
     color: #FFF;
     padding: 0 1.8rem;
     margin: 3% 0;
@@ -745,15 +828,19 @@ html, body {
 
 @media (max-width: 991px) {
     .home-form h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .home-form p {
-        font-size: 1.5rem;
-        margin: 5% 0;
+        font-size: 1.3rem;
+        margin: 3% 0 7% 0;
+    }
+    .home-form form {
+        font-family: Poppins Light;
+        margin: 10%;
     }
     .home-form form .form-control {
         padding: 2rem 1.8rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         transition: all 0.5s;
     }
     .home-form form .form-control:focus {
@@ -770,7 +857,22 @@ html, body {
         border-bottom-left-radius: 38px;
         border-top-right-radius: 18px;
         padding: 0.5rem 2rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 405px) {
+    .home-form h2 {
+        font-size: 1.7rem;
+    }
+    .home-form p {
+        font-size: 1.1rem;
+    }
+    .home-form form .form-control {
+        font-size: 1rem;
+    }
+    .home-form form button {
+        font-size: 1.4rem;
     }
 }
 
