@@ -15,6 +15,7 @@ const Footer = () => {
                 <Link className="rrd-link" to="/">Inicio</Link>
                 <Link className="rrd-link" to="/galeria">Galería</Link>
                 <Link className="rrd-link" to="/servicios">Servicios</Link>
+                <Link className="rrd-link" to="/proyectos">Proyectos</Link>
                 <Link className="rrd-link" to="/contactos">Contactos</Link>
                 <Link className="rrd-link" to="/quienes-somos">Quiénes Somos</Link>
             </section>

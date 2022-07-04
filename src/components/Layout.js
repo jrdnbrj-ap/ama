@@ -10,11 +10,10 @@ const Layout = ({ children }) => {
     const pathsWithFooter = [
         '/',
         '/quienes-somos',
-        '/casas',
         '/proyectos',
+        '/servicios',
         '/galeria',
         '/contactos',
-        '/kairos'
     ]
 
     return <>
