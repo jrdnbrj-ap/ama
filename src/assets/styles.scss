@@ -772,19 +772,17 @@ html, body {
 .home-form h2 {
     font-family: Poppins SemiBold;
     font-size: 1.5rem;
-    // text-align: justify;
 }
 
 .home-form p {
     font-family: Poppins Light;
     font-size: 1rem;
     margin: 0 0 5% 0;
-    // text-align: justify;
 }
 
 .home-form form {
     font-family: Poppins Light;
-    margin: 10% 30% 10% 10%;
+    margin: 10%;
 }
 
 .home-form form .form-control {
@@ -876,6 +874,11 @@ html, body {
     }
 }
 
+.home-form-2 {
+    background-color: #182A43;
+    color: #FFF;
+}
+
 .home-form-2 .col-lg {
     padding: 0;
 }
@@ -888,15 +891,13 @@ html, body {
 
 .home-form-2 h2 {
     font-family: Poppins SemiBold;
-    font-size: 1.8rem;
-    text-align: justify;
+    font-size: 1.5rem;
 }
 
 .home-form-2 p {
     font-family: Poppins Light;
     font-size: 1rem;
     margin: 0 0 5% 0;
-    text-align: justify;
 }
 
 .home-form-2 form {
@@ -908,9 +909,8 @@ html, body {
 .home-form-2 form .form-control {
     display: block;
     background-color: transparent;
-    border: 3px solid #000;
-    border-bottom-left-radius: 38px;
-    border-top-right-radius: 18px;
+    border: none;
+    border-bottom: 3px solid #FFF;
     padding: 0 1.8rem;
     margin: 3% 0;
     font-size: 1rem;
@@ -927,7 +927,7 @@ html, body {
 }
 
 .home-form-2 form button {
-    background-color: #000;
+    background-color: #FFF;
     border: 0;
     border-radius: 3px;
     border-bottom-left-radius: 38px;
@@ -935,7 +935,7 @@ html, body {
     padding: 0.8rem 2.5rem;
     font-family: Poppins Light;
     font-size: 1.2rem;
-    color: #FFF;
+    color: #232323;
     width: 100%;
     text-align: start;
 }
@@ -949,12 +949,12 @@ html, body {
         font-size: 2.5rem;
     }
     .home-form-2 p {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         margin: 5% 0;
     }
     .home-form-2 form .form-control {
         padding: 2rem 1.8rem;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         transition: all 0.5s;
     }
     .home-form-2 form .form-control:focus {
@@ -971,7 +971,22 @@ html, body {
         border-bottom-left-radius: 38px;
         border-top-right-radius: 18px;
         padding: 0.5rem 2rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 405px) {
+    .home-form-2 h2 {
+        font-size: 1.7rem;
+    }
+    .home-form-2 p {
+        font-size: 1.1rem;
+    }
+    .home-form-2 form .form-control {
+        font-size: 1rem;
+    }
+    .home-form-2 form button {
+        font-size: 1.4rem;
     }
 }
 
@@ -1059,341 +1074,114 @@ html, body {
 
 /* QUIENES SOMOS QUIENES SOMOS */
 
-.us-header {
-    background-image: url('../assets/images/quienes-somos.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 0;
-    padding-top: 60%;
-}
-
-.nuestra-historia {
-    padding: 7rem 7rem 0rem 7rem;
-}
-
-.nuestra-historia h2 {
-    font-family: Poppins SemiBold;
-    letter-spacing: 15px;
-    font-size: 3rem;
-    color: #1D262C;
-    margin: 0;
-}
-
-.nuestra-historia h3,
-.valores h3 {
-    font-family: Poppins Light;
-    letter-spacing: 5px;
-    font-size: 2rem;
-    margin: 0rem 0 2rem 0;
-    color: #45AFB7;
-}
-
-.nuestra-historia p,
-.valores p {
-    font-family: Poppins Light;
-    font-size: 1.2rem;
-    margin: 0 0 2rem 0;
-    text-align: justify;
-    color: #1D262C;
-}
-
-.valores {
-    padding: 0rem 7rem 6rem 7rem;
+.quienes-somos {
+    .col-lg {
+        padding: 0;
+    }
+    .quienes-back {
+        background-image: url('../assets/images/quienes-back.png');
+        background-size: cover;
+        display: table;
+        h1 {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 2.5rem;
+            font-family: Poppins SemiBold;
+            letter-spacing: 15px;
+            margin: 0 auto;
+        }
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .mis-vis {
+        background-color: #1D1D1D;
+        color: #FFF;
+        .col-lg:first-child {
+            padding: 10rem 3rem 10rem 8rem;
+        }
+        .col-lg:last-child {
+            padding: 10rem 8rem 10rem 3rem;
+        }
+        .col-lg {
+            label {
+                font-family: Poppins SemiBold;
+                font-size: 1.7rem;
+                letter-spacing: 10px;
+            }
+            p {
+                margin: 1rem 0 0 4rem;
+                font-family: Poppins Light;
+                font-size: 1.1rem;
+            }
+        }
+    }
 }
 
 @media (max-width: 991px) {
-    .nuestra-historia {
-        padding: 7rem 5rem 0rem 5rem;
-    }
-    .valores {
-        padding: 0rem 5rem 6rem 5rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .nuestra-historia {
-        padding: 5rem 3rem 0rem 3rem;
-    }
-    .valores {
-        padding: 0rem 3rem 5rem 3rem;
-    }
-    .nuestra-historia h2 {
-        letter-spacing: 13px;
-        font-size: 1.6rem;
-    }
-    .nuestra-historia h3,
-    .valores h3 {
-        letter-spacing: 5px;
-        font-size: 1.3rem;
-    }
-    .nuestra-historia p,
-    .valores p {
-        font-size: 0.9rem;
-    }
-    .mision-quienes-somos {
-        font-size: 1.5rem !important;
+    .quienes-somos {
+        .mis-vis {
+            .col-lg:first-child {
+                padding: 6rem 8rem;
+            }
+            .col-lg:last-child {
+                padding: 3rem 8rem 6rem 8rem;
+            }
+            .col-lg {
+                label {
+                    font-size: 2.1rem;
+                }
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
     }
 }
 
-@media (max-width: 380px) {
-    .nuestra-historia {
-        padding: 4rem 2rem 0rem 2rem;
-    }
-    .valores {
-        padding: 0rem 2rem 2rem 2rem;
-    }
-    .nuestra-historia h2 {
-        letter-spacing: 13px;
-        font-size: 1.6rem;
-    }
-    .nuestra-historia h3,
-    .valores h3 {
-        letter-spacing: 5px;
-        font-size: 1.3rem;
-    }
-    .nuestra-historia p,
-    .valores p {
-        font-size: 0.9rem;
-    }
-    .mision-quienes-somos {
-        font-size: 1.5rem !important;
+@media (max-width: 714px) {
+    .quienes-somos {
+        .mis-vis {
+            .col-lg:first-child {
+                padding: 8rem 5rem;
+            }
+            .col-lg:last-child {
+                padding: 3rem 5rem 8rem 5rem;
+            }
+            .col-lg {
+                label {
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1.1rem;
+                    margin: 1rem 0 0 3rem;
+                }
+            }
+        }
     }
 }
 
-#inova-sensaciones {
-    width: 100%;
-    height: 100%;
-    margin-bottom: -10px;
-}
-
-.quienes-info {
-    padding: 5rem;
-}
-
-.quienes-info div {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    
-}
-
-.quienes-info h2 {
-    font-family: Poppins Light;
-    letter-spacing: 5px;
-    font-size: 2rem;
-    color: #45AFB7;
-}
-
-.quienes-info p {
-    font-family: Poppins Light;
-    font-size: 1.1rem;
-    margin: 0 0 3rem 0;
-    text-align: justify;
-    color: #000;
-}
-
-.quienes-img {
-    padding: 0;
-}
-
-.quienes-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* transform: translateX(50%); */
-}
-
-@media (max-width: 480px) {
-    .quienes-info {
-        padding: 3rem;
-    }
-    .quienes-info h2 {
-        font-size: 1.6rem;
-    }
-    .quienes-info p {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 380px) {
-    .quienes-info {
-        padding: 2rem;
-    }
-    .quienes-info h2 {
-        font-size: 1.1rem;
-    }
-    .quienes-info p {
-        font-size: 0.9rem;
-    }
-}
-
-.somos {
-    padding: 10%;
-    background-color: #DEDEDE;
-}
-
-.somos-names {
-    font-family: Poppins SemiBold;
-    font-size: 1.3rem;
-    margin: 1rem 0 0 0;
-    letter-spacing: 8px;
-}
-
-.somos-container {
-    position: relative;
-}
-
-.somos-container img {
-    width: 100%;
-    transition: all 0.3s ease-in-out;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-}
-
-.somos-container img:hover {
-    filter: brightness(70%);
-}
-
-.somos-container img:hover + .somos-hover {
-    display: block;
-}
-
-.somos-hover {
-    position: absolute;
-    top: 0rem;
-    color: #FFF;
-    display: none;
-    pointer-events: none;
-    padding: 0 1rem;
-    margin-top: 1.5rem;
-}
-
-.somos-hover h2 {
-    font-family: Poppins SemiBold;
-    font-size: 1.1rem;
-    margin: 1rem 0;
-    letter-spacing: 6px;
-    line-height: 0;
-}
-
-.somos-hover h3 {
-    font-family: Poppins SemiBold;
-    font-size: 0.8rem;
-    margin: 1rem 0;
-    letter-spacing: 3px;
-}
-
-.somos-hover p {
-    font-family: Poppins Light;
-    font-size: 0.8rem;
-    margin: 0;
-    /* text-align: justify; */
-}
-
-@media (max-width: 991px) {
-    .somos-names {
-        font-size: 2rem;
-        margin: 1rem 0 3rem 0;
-    }
-    .somos-hover {
-        padding: 0 1.6rem;
-        margin-top: 4rem;
-    }
-    .somos-hover h2 {
-        font-size: 1.8rem;
-        margin: 1rem 0;
-        letter-spacing: 6px;
-    }
-    .somos-hover h3 {
-        font-size: 1.4rem;
-    }
-    .somos-hover p {
-        font-size: 1.1rem;
-    }
-    #elizabeth, #guillermo {
-        margin: 1rem 0 0rem 0;
-    }
-}
-
-@media (max-width: 700px) {
-    .us-header {
-        padding-top: 80%;
-    }
-    .somos-names {
-        font-size: 1.7rem;
-    }
-    .somos-hover {
-        padding: 0 1.2rem;
-        margin-top: 3rem;
-    }
-    .somos-hover h2 {
-        font-size: 1.5rem;
-        letter-spacing: 6px;
-    }
-    .somos-hover h3 {
-        font-size: 1.1rem;
-    }
-    .somos-hover p {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .somos-hover {
-        padding: 0 2.3rem;
-        margin-top: 5.7rem;
-    }
-    .somos-hover h2 {
-        font-size: 2.6rem;
-        letter-spacing: 6px;
-    }
-    .somos-hover h3 {
-        font-size: 1.9rem;
-    }
-    .somos-hover p {
-        font-size: 1.5rem;
-    }
-    #elizabeth {
-        margin: 1rem 0 3rem 0;
-    }
-}
-
-
-@media (max-width: 450px) {
-    .us-header {
-        padding-top: 100%;
-    }
-    .somos-hover {
-        padding: 0 1.5rem;
-        margin-top: 4rem;
-    }
-    .somos-hover h2 {
-        font-size: 2rem;
-        letter-spacing: 6px;
-    }
-    .somos-hover h3 {
-        font-size: 1.5rem;
-    }
-    .somos-hover p {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 350px) {
-    .somos-hover {
-        padding: 0 1rem;
-        margin-top: 3rem;
-    }
-    .somos-hover h2 {
-        font-size: 1.6rem;
-        letter-spacing: 6px;
-    }
-    .somos-hover h3 {
-        font-size: 1.3rem;
-    }
-    .somos-hover p {
-        font-size: 1rem;
+@media (max-width: 466px) {
+    .quienes-somos {
+        .mis-vis {
+            .col-lg:first-child {
+                padding: 8rem 3rem;
+            }
+            .col-lg:last-child {
+                padding: 0rem 3rem 8rem 3rem;
+            }
+            .col-lg {
+                label {
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+        }
     }
 }
 
