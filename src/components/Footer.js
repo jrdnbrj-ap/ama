@@ -22,7 +22,7 @@ const Footer = () => {
             <section className="col-lg col-12 col-sm-6">
                 <h3>CONTÁCTENOS</h3>
                 <a 
-                    href="https://wa.me/593998799739"
+                    href="https://wa.me/5930969616579"
                     target="_blank" rel="noreferrer"
                 >
                     <span>+593 96 962 6579</span>
@@ -32,7 +32,7 @@ const Footer = () => {
             <section className="col-lg col-12 col-sm-6">
                 <h3>CAPACITACIONES</h3>
                 <a 
-                    href="https://wa.me/593998799739"
+                    href="https://wa.me/5930969616579"
                     target="_blank" rel="noreferrer"
                 >
                     <i className="bi bi-whatsapp" />

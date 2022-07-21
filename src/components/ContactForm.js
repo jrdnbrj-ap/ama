@@ -1,4 +1,4 @@
-import contactImage from '../assets/images/building3.png'
+import contactImage from '../assets/images/proy-22.png'
 
 
 const ContactForm = ({ onHome }) => {

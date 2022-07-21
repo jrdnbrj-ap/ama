@@ -56,10 +56,10 @@ const Navbar = () => {
                             </li>
                             <li className="nav-item no-link">
                                 <a 
-                                    href="https://wa.me/593998799739"
+                                    href="https://wa.me/593969626579"
                                     target="_blank" rel="noreferrer"
                                 >
-                                    <span className="nav-link">0998799739</span>
+                                    <span className="nav-link">0969626579</span>
                                 </a>
                             </li>
                         </ul>

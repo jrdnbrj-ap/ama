@@ -29,7 +29,7 @@ const Home = () => {
                         <i className="bi bi-facebook" />
                     </a>
                     <a 
-                        href="https://wa.me/593998799739"
+                        href="https://wa.me/593969626579"
                         target="_blank" rel="noreferrer"
                     >
                         <i className="bi bi-whatsapp" />
