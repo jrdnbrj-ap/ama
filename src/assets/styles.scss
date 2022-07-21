@@ -116,7 +116,7 @@ html, body {
 }
 
 .absolute {
-    position: absolute;
+    // position: absolute;
     width: 100%;
     /* height: 2000px; */
     z-index: 2000;
@@ -1188,346 +1188,493 @@ html, body {
 /* PROYECTOS PROYECTOS */
 
 .proyectos {
-    padding: 15% 10% 0 10%;
-}
+    // padding: 15% 10% 0 10%;
+    .proy-1 {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .col-lg {
+            padding: 0;
+            // display: table;
+        }
+        .__info {
+            margin: 10rem 9rem 10rem 4rem;
+            label {
+                font-family: Poppins SemiBold;
+                font-size: 1.7rem;
+                letter-spacing: 15px;
+                line-height: 35px;
 
-.card {
-    border: 0;
-}
-.card--image {
-    height: 100%;
-}
-.card--image img {
-    filter: drop-shadow( 3px 3px 7px rgba(0, 0, 0, 0.7));
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: inline-block;
-    vertical-align: middle;
-}
-.card--info {
-    --size: 20px;
-    width: var(--size);
-    height: var(--size);
-    background: rgba(0, 0, 0, 0.75);
-    border-radius: 2px;
-    position: absolute;
-    transition: width 550ms ease, height 550ms ease, right 550ms ease, background 550ms ease;
-    overflow: hidden;
-    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.014), 0 6.7px 5.3px rgba(0, 0, 0, 0.02), 0 12.5px 10px rgba(0, 0, 0, 0.025), 0 22.3px 17.9px rgba(0, 0, 0, 0.03), 0 41.8px 33.4px rgba(0, 0, 0, 0.036), 0 100px 80px rgba(0, 0, 0, 0.05), 0 0px 2.2px rgba(0, 0, 0, 0.045), 0 0px 5.3px rgba(0, 0, 0, 0.065), 0 0px 10px rgba(0, 0, 0, 0.08), 0 0px 17.9px rgba(0, 0, 0, 0.095), 0 0px 33.4px rgba(0, 0, 0, 0.115), 0 0px 80px rgba(0, 0, 0, 0.16), 0 0.2px 2.2px rgba(0, 0, 0, 0.014), 0 0.6px 5.3px rgba(0, 0, 0, 0.02), 0 1.1px 10px rgba(0, 0, 0, 0.025), 0 2px 17.9px rgba(0, 0, 0, 0.03), 0 3.8px 33.4px rgba(0, 0, 0, 0.036), 0 9px 80px rgba(0, 0, 0, 0.05);
-}
-.card--info::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.25) 50%, transparent 100%);
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 550ms ease;
-}
-.card--info.info--1 {
-    bottom: 30%;
-    right: 76%;
-}
-.card--info.info--1 .info--image img {
-    top: -249%;
-    left: -95%;
-}
-.card--info.info--2 {
-    bottom: 27%;
-    right: 37%;
-}
-.card--info.info--2 .info--image img {
-    right: -50%;
-    bottom: -41%;
-}
-.card--info .icon {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card--info .icon i {
-    color: white;
-}
-.card--info .info--text {
-    display: block;
-    position: absolute;
-    left: 10%;
-    bottom: 5%;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
-    font-family: Poppins Light;
-    font-weight: bold;
-    color: #fff;
-    white-space: nowrap;
-    z-index: 2;
-    opacity: 0;
-    transform: translateY(25%);
-    transition: opacity 250ms ease, transform 250ms ease;
-}
-.card--info .info--image {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.card--info .info--image img {
-    position: absolute;
-    width: 340%;
-    height: 340%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 550ms ease;
-}
-.card:hover .card--info {
-    --size: 120px;
-}
-.card:hover .card--info::after {
-    opacity: 1;
-}
-.card:hover .card--info.info--1 {
-    right: 47%;
-    transition-delay: 50ms;
-}
-.card:hover .card--info.info--2 {
-    right: 5%;
-}
-.card:hover .card--info .info--image img {
-    opacity: 1;
-}
-.card:hover .card--info .info--text {
-    transition-delay: 550ms;
-    opacity: 1;
-    transform: translateY(0%);
-}
+            }
+            p {
+                margin: 3rem 0 0 0;
+                font-family: Poppins Light;
+                font-size: 1.1rem;
+            }
+        }
+    }
+    .proy-2 {
+        // height: 30rem;
+        .col-lg {
+            height: 35rem;
+            padding: 0;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .proy-2-col {
+            img:first-child {
+                height: 50%;
+            }
+            img:last-child {
+                height: 50%;
+            }
+        }
+    }
+    .proy-3 {
+        .col-lg {
+            padding: 0;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .__info {
+                margin: 10rem 4rem 10rem 9rem;
+                label {
+                    font-family: Poppins SemiBold;
+                    font-size: 1.7rem;
+                    letter-spacing: 15px;
+                    line-height: 35px;
+                    margin-bottom: 1rem;
+                }
+                p {
+                    margin: 2rem 0 0 0;
+                    font-family: Poppins Light;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+    .proy-4 {
+        .col-lg {
+            padding: 0;
+            img {
+                width: 100%;
+                height: 100.3%;
+                object-fit: cover;
+            }
+            .asd {
+                width: 100.1%;
+            }
+        }
+    }
+    .proy-5 {
+        background-image: url('../assets/images/proy-51.png');
+        background-size: cover;
+        img {
+            display: none;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        div {
+            text-align: center;
+            padding: 13rem 0;
+            span {
+                font-family: Poppins SemiBold;
+                font-size: 3.5rem;
+                letter-spacing: 15px;
+                color: #FFF;
+            }
+        }
+        &:hover {
+            background-image: url('../assets/images/proy-52.png');
+            background-size: cover;
+            div {
+                display: none;
+            }
+            img {
+                display: block;
+            }
+        }
+    }
+    .proy-6 {
+        padding: 8rem;
+        .col-lg {
+            padding: 0;
+            label {
+                font-family: Poppins SemiBold;
+                font-size: 1.7rem;
+                letter-spacing: 15px;
+                line-height: 35px;
+            }
+            p {
+                margin: 3rem 0 0 0;
+                font-family: Poppins Light;
+                font-size: 1.1rem;
+            }
+            .images-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 1rem;
+                width: 55%;
+                margin: 0;
+                // padding: 0 10rem 0 0;
+            }
+        }
+        .__info {
+            // margin-right: 5rem;
+        }
+        // .img1 {
+        //     grid-column: 1;
+        //     grid-row: 1;
 
-.proyectos .row {
-    margin: 5% 0
-}
-
-.proyectos .row .col-lg-6:last-child {
-    padding: 5%;
-}
-
-.proyectos .col-lg-6 {
-    padding: 0;
-}
-
-.proyectos h1 {
-    letter-spacing: 12px;
-}
-
-#nuestros {
-    color: #45AFB7;
-    font-size: 2rem;
-    font-family: Poppins Light;
-}
-
-#proyectos {
-    color: #16243E;
-    font-size: 2.6rem;
-    font-family: Poppins SemiBold;
-}
-
-.proyectos h2 {
-    letter-spacing: 8px;
-    color: #3A2B6C;
-    font-size: 2rem;
-    font-family: Poppins Regular;
-    margin-bottom: 5%;
-}
-
-.proyectos p {
-    font-family: Poppins Light;
-    font-size: 1.2rem;
-    text-align: justify;
-}
-
-.edificios-intro {
-    padding: 0 10% 5% 10%;
-    font-size: 1.5rem;
-    font-family: Poppins Regular;
-    text-align: justify;
-    filter: drop-shadow(0px 10px 10px gray);
-}
-
-@media (min-width: 992px) {
-    .proyectos-p {
-        padding-right: 0 !important;
+        // }
     }
 }
 
-@media (max-width: 991px) {
-    .proyectos {
-        padding: 22% 10% 0 10%;
-    }
-    #nuestros {
-        font-size: 2.7rem;
-    }
-    #proyectos {
-        font-size: 3.5rem;
-    }
-    .proyectos h2 {
-        font-size: 2.5rem;
-        margin-bottom: 4%;
-    }
-    .proyectos p, .edificios-intro {
-        font-size: 1.5rem;
-    }
-}
+// .card {
+//     border: 0;
+// }
+// .card--image {
+//     height: 100%;
+// }
+// .card--image img {
+//     filter: drop-shadow( 3px 3px 7px rgba(0, 0, 0, 0.7));
+//     width: 100%;
+//     height: 100%;
+//     object-fit: contain;
+//     display: inline-block;
+//     vertical-align: middle;
+// }
+// .card--info {
+//     --size: 20px;
+//     width: var(--size);
+//     height: var(--size);
+//     background: rgba(0, 0, 0, 0.75);
+//     border-radius: 2px;
+//     position: absolute;
+//     transition: width 550ms ease, height 550ms ease, right 550ms ease, background 550ms ease;
+//     overflow: hidden;
+//     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.014), 0 6.7px 5.3px rgba(0, 0, 0, 0.02), 0 12.5px 10px rgba(0, 0, 0, 0.025), 0 22.3px 17.9px rgba(0, 0, 0, 0.03), 0 41.8px 33.4px rgba(0, 0, 0, 0.036), 0 100px 80px rgba(0, 0, 0, 0.05), 0 0px 2.2px rgba(0, 0, 0, 0.045), 0 0px 5.3px rgba(0, 0, 0, 0.065), 0 0px 10px rgba(0, 0, 0, 0.08), 0 0px 17.9px rgba(0, 0, 0, 0.095), 0 0px 33.4px rgba(0, 0, 0, 0.115), 0 0px 80px rgba(0, 0, 0, 0.16), 0 0.2px 2.2px rgba(0, 0, 0, 0.014), 0 0.6px 5.3px rgba(0, 0, 0, 0.02), 0 1.1px 10px rgba(0, 0, 0, 0.025), 0 2px 17.9px rgba(0, 0, 0, 0.03), 0 3.8px 33.4px rgba(0, 0, 0, 0.036), 0 9px 80px rgba(0, 0, 0, 0.05);
+// }
+// .card--info::after {
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     width: 100%;
+//     height: 100%;
+//     background: linear-gradient(to top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.25) 50%, transparent 100%);
+//     z-index: 1;
+//     opacity: 0;
+//     transition: opacity 550ms ease;
+// }
+// .card--info.info--1 {
+//     bottom: 30%;
+//     right: 76%;
+// }
+// .card--info.info--1 .info--image img {
+//     top: -249%;
+//     left: -95%;
+// }
+// .card--info.info--2 {
+//     bottom: 27%;
+//     right: 37%;
+// }
+// .card--info.info--2 .info--image img {
+//     right: -50%;
+//     bottom: -41%;
+// }
+// .card--info .icon {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+// .card--info .icon i {
+//     color: white;
+// }
+// .card--info .info--text {
+//     display: block;
+//     position: absolute;
+//     left: 10%;
+//     bottom: 5%;
+//     font-size: 0.8rem;
+//     letter-spacing: 1px;
+//     font-family: Poppins Light;
+//     font-weight: bold;
+//     color: #fff;
+//     white-space: nowrap;
+//     z-index: 2;
+//     opacity: 0;
+//     transform: translateY(25%);
+//     transition: opacity 250ms ease, transform 250ms ease;
+// }
+// .card--info .info--image {
+//     position: relative;
+//     width: 100%;
+//     height: 100%;
+//     overflow: hidden;
+// }
+// .card--info .info--image img {
+//     position: absolute;
+//     width: 340%;
+//     height: 340%;
+//     object-fit: cover;
+//     opacity: 0;
+//     transition: opacity 550ms ease;
+// }
+// .card:hover .card--info {
+//     --size: 120px;
+// }
+// .card:hover .card--info::after {
+//     opacity: 1;
+// }
+// .card:hover .card--info.info--1 {
+//     right: 47%;
+//     transition-delay: 50ms;
+// }
+// .card:hover .card--info.info--2 {
+//     right: 5%;
+// }
+// .card:hover .card--info .info--image img {
+//     opacity: 1;
+// }
+// .card:hover .card--info .info--text {
+//     transition-delay: 550ms;
+//     opacity: 1;
+//     transform: translateY(0%);
+// }
 
-@media (max-width: 700px) {
-    #nuestros {
-        font-size: 1.8rem;
-    }
-    #proyectos {
-        font-size: 2.5rem;
-    }
-    .proyectos h2 {
-        font-size: 1.6rem;
-    }
-    .proyectos p, .edificios-intro {
-        font-size: 1.4rem;
-    }
-}
+// .proyectos .row {
+//     margin: 5% 0
+// }
 
-@media (max-width: 535px) {
-    .proyectos {
-        padding: 30% 10% 0 10%;
-    }
-    #nuestros {
-        font-size: 1.1rem;
-        letter-spacing: 9px;
-    }
-    #proyectos {
-        font-size: 1.5rem;
-        letter-spacing: 9px;
-    }
-    .proyectos h2 {
-        font-size: 1.4rem;
-    }
-    .proyectos p, .edificios-intro {
-        font-size: 1.2rem;
-    }
-}
+// .proyectos .row .col-lg-6:last-child {
+//     padding: 5%;
+// }
 
-@media (max-width: 355px) {
-    .proyectos {
-        padding: 35% 10% 0 10%;
-    }
-    #nuestros {
-        font-size: 0.8rem;
-        letter-spacing: 8px;
-    }
-    #proyectos {
-        font-size: 1.1rem;
-        letter-spacing: 8px;
-    }
-    .proyectos h2 {
-        font-size: 1rem;
-    }
-    .proyectos p, .edificios-intro {
-        font-size: 0.8rem;
-    }
-}
+// .proyectos .col-lg-6 {
+//     padding: 0;
+// }
 
-.edificios-col {
-    padding: 0;
-    background-color: #DEDEDE;
-}
+// .proyectos h1 {
+//     letter-spacing: 12px;
+// }
 
-.edificios-col img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+// #nuestros {
+//     color: #45AFB7;
+//     font-size: 2rem;
+//     font-family: Poppins Light;
+// }
 
-.edificios-text {
-    padding: 5rem;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
+// #proyectos {
+//     color: #16243E;
+//     font-size: 2.6rem;
+//     font-family: Poppins SemiBold;
+// }
 
-.edificios-text h2 {
-    font-size: 1.6rem;
-    font-family: Poppins Regular;
-    letter-spacing: 5px;
-    color: #45AFB7;
-    line-height: 1.5rem;
-    margin: 0;
-}
+// .proyectos h2 {
+//     letter-spacing: 8px;
+//     color: #3A2B6C;
+//     font-size: 2rem;
+//     font-family: Poppins Regular;
+//     margin-bottom: 5%;
+// }
 
-.edificios-text h3 {
-    color: #45AFB7;
-    font-size: 1.3rem;
-    font-family: Poppins Regular;
-    margin: 0;
-}
+// .proyectos p {
+//     font-family: Poppins Light;
+//     font-size: 1.2rem;
+//     text-align: justify;
+// }
 
-.edificios-text p {
-    font-size: 1rem;
-    font-family: Poppins Light;
-    text-align: justify;
-    margin: 1rem 0rem 2.5rem 0rem;
-}
+// .edificios-intro {
+//     padding: 0 10% 5% 10%;
+//     font-size: 1.5rem;
+//     font-family: Poppins Regular;
+//     text-align: justify;
+//     filter: drop-shadow(0px 10px 10px gray);
+// }
 
-.edificios-construidos {
-    padding: 5rem;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
+// @media (min-width: 992px) {
+//     .proyectos-p {
+//         padding-right: 0 !important;
+//     }
+// }
 
-.edificios-construidos h2 {
-    font-size: 1.6rem;
-    font-family: Poppins Regular;
-    letter-spacing: 8px;
-    color: #45AFB7;
-    margin: 0;
-}
+// @media (max-width: 991px) {
+//     .proyectos {
+//         padding: 22% 10% 0 10%;
+//     }
+//     #nuestros {
+//         font-size: 2.7rem;
+//     }
+//     #proyectos {
+//         font-size: 3.5rem;
+//     }
+//     .proyectos h2 {
+//         font-size: 2.5rem;
+//         margin-bottom: 4%;
+//     }
+//     .proyectos p, .edificios-intro {
+//         font-size: 1.5rem;
+//     }
+// }
 
-.edificios-construidos p {
-    font-size: 1rem;
-    font-family: Poppins Light;
-    text-align: justify;
-    margin: 2rem 0;
-}
+// @media (max-width: 700px) {
+//     #nuestros {
+//         font-size: 1.8rem;
+//     }
+//     #proyectos {
+//         font-size: 2.5rem;
+//     }
+//     .proyectos h2 {
+//         font-size: 1.6rem;
+//     }
+//     .proyectos p, .edificios-intro {
+//         font-size: 1.4rem;
+//     }
+// }
 
-.last-text {
-    margin-bottom: 0 !important;
-}
+// @media (max-width: 535px) {
+//     .proyectos {
+//         padding: 30% 10% 0 10%;
+//     }
+//     #nuestros {
+//         font-size: 1.1rem;
+//         letter-spacing: 9px;
+//     }
+//     #proyectos {
+//         font-size: 1.5rem;
+//         letter-spacing: 9px;
+//     }
+//     .proyectos h2 {
+//         font-size: 1.4rem;
+//     }
+//     .proyectos p, .edificios-intro {
+//         font-size: 1.2rem;
+//     }
+// }
 
-@media (max-width: 510px) {
-    .edificios-text,
-    .edificios-construidos {
-        padding: 3rem 2rem;
-    }
-}
+// @media (max-width: 355px) {
+//     .proyectos {
+//         padding: 35% 10% 0 10%;
+//     }
+//     #nuestros {
+//         font-size: 0.8rem;
+//         letter-spacing: 8px;
+//     }
+//     #proyectos {
+//         font-size: 1.1rem;
+//         letter-spacing: 8px;
+//     }
+//     .proyectos h2 {
+//         font-size: 1rem;
+//     }
+//     .proyectos p, .edificios-intro {
+//         font-size: 0.8rem;
+//     }
+// }
 
-@media (max-width: 330px) {
-    .edificios-text h2,
-    .edificios-construidos h2 {
-        font-size: 1.2rem;
-        letter-spacing: 2.5px;
-    }
-    .edificios-text h3 {
-        font-size: 1rem;
-    }
-    .edificios-text p,
-    .edificios-construidos p {
-        font-size: 0.8rem;
-    }
-}
+// .edificios-col {
+//     padding: 0;
+//     background-color: #DEDEDE;
+// }
+
+// .edificios-col img {
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+// }
+
+// .edificios-text {
+//     padding: 5rem;
+//     position: relative;
+//     top: 50%;
+//     transform: translateY(-50%);
+// }
+
+// .edificios-text h2 {
+//     font-size: 1.6rem;
+//     font-family: Poppins Regular;
+//     letter-spacing: 5px;
+//     color: #45AFB7;
+//     line-height: 1.5rem;
+//     margin: 0;
+// }
+
+// .edificios-text h3 {
+//     color: #45AFB7;
+//     font-size: 1.3rem;
+//     font-family: Poppins Regular;
+//     margin: 0;
+// }
+
+// .edificios-text p {
+//     font-size: 1rem;
+//     font-family: Poppins Light;
+//     text-align: justify;
+//     margin: 1rem 0rem 2.5rem 0rem;
+// }
+
+// .edificios-construidos {
+//     padding: 5rem;
+//     position: relative;
+//     top: 50%;
+//     transform: translateY(-50%);
+// }
+
+// .edificios-construidos h2 {
+//     font-size: 1.6rem;
+//     font-family: Poppins Regular;
+//     letter-spacing: 8px;
+//     color: #45AFB7;
+//     margin: 0;
+// }
+
+// .edificios-construidos p {
+//     font-size: 1rem;
+//     font-family: Poppins Light;
+//     text-align: justify;
+//     margin: 2rem 0;
+// }
+
+// .last-text {
+//     margin-bottom: 0 !important;
+// }
+
+// @media (max-width: 510px) {
+//     .edificios-text,
+//     .edificios-construidos {
+//         padding: 3rem 2rem;
+//     }
+// }
+
+// @media (max-width: 330px) {
+//     .edificios-text h2,
+//     .edificios-construidos h2 {
+//         font-size: 1.2rem;
+//         letter-spacing: 2.5px;
+//     }
+//     .edificios-text h3 {
+//         font-size: 1rem;
+//     }
+//     .edificios-text p,
+//     .edificios-construidos p {
+//         font-size: 0.8rem;
+//     }
+// }
 
 /* GALERIA GALERIA GALERIA */
 

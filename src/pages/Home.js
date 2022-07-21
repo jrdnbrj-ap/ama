@@ -19,7 +19,7 @@ const Home = () => {
             <section className="video-container">
                 <img src={Home1} alt="Home" id="inova-experiencia" />
                 <div className="video-text">
-                    <h1>SOMOS UNA EMPRESA ENFOCADA &nbsp; EN EL CONFORT DEL CLIENTE</h1>
+                    <h1>SOMOS UNA EMPRESA ENFOCADA EN EL CONFORT DEL CLIENTE</h1>
                 </div>
                 <section className="socials">
                     <a 

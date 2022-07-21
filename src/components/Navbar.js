@@ -1,28 +1,28 @@
-import { useEffect } from 'react'
+// import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import logo from '../assets/images/logo.svg'
 
 
 const Navbar = () => {
-    useEffect(() => {
-        const autohide = document.querySelector('.autohide')
-        let lastScroll = 0
+    // useEffect(() => {
+    //     const autohide = document.querySelector('.autohide')
+    //     let lastScroll = 0
 
-        window.onscroll = e => {
-            const currentScroll = document.documentElement.scrollTop
+    //     window.onscroll = e => {
+    //         const currentScroll = document.documentElement.scrollTop
             
-            if (lastScroll <= currentScroll) {
-                autohide.classList.remove('scrolled-up')
-                autohide.classList.add('scrolled-down')
-            } else {
-                autohide.classList.add('scrolled-up')
-                autohide.classList.add('navbar-sticky')
-            }
+    //         if (lastScroll <= currentScroll) {
+    //             autohide.classList.remove('scrolled-up')
+    //             autohide.classList.add('scrolled-down')
+    //         } else {
+    //             autohide.classList.add('scrolled-up')
+    //             autohide.classList.add('navbar-sticky')
+    //         }
             
-            lastScroll = currentScroll
-        }
-    })
+    //         lastScroll = currentScroll
+    //     }
+    // })
 
     return (
         <div className="absolute">
