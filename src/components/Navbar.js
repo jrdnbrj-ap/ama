@@ -1,35 +1,34 @@
-// import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import logo from '../assets/images/logo.svg'
+import logoBlue from '../assets/images/logo-blue.svg'
 
 
-const Navbar = () => {
-    // useEffect(() => {
-    //     const autohide = document.querySelector('.autohide')
-    //     let lastScroll = 0
+const Navbar = ({ path }) => {
 
-    //     window.onscroll = e => {
-    //         const currentScroll = document.documentElement.scrollTop
-            
-    //         if (lastScroll <= currentScroll) {
-    //             autohide.classList.remove('scrolled-up')
-    //             autohide.classList.add('scrolled-down')
-    //         } else {
-    //             autohide.classList.add('scrolled-up')
-    //             autohide.classList.add('navbar-sticky')
-    //         }
-            
-    //         lastScroll = currentScroll
-    //     }
-    // })
+    const [logoSrc, setLogoSrc] = useState(logo)
+    const [colorId, setColorId] = useState('')
+
+    useEffect(() => {
+        if (path === '/servicios' || path === '/galeria' || path === '/contactos') {
+            setLogoSrc(logoBlue)
+            setColorId('color-blue')
+        } else {
+            setLogoSrc(logo)
+            setColorId('')
+        }
+    }, [path])
 
     return (
         <div className="absolute">
-            <nav className="navbar navbar-container navbar-expand-lg bg-light autohide">
+            <nav 
+                className="navbar navbar-container navbar-expand-lg autohide"
+                id={colorId}
+            >
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">
-                        <img src={logo} className="logo-nav" alt="Maere Logo" />
+                        <img src={logoSrc} className="logo-nav" alt="Maere Logo" />
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <i className="bi bi-list" />

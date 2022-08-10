@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 import Home1 from '../assets/images/Home1.png'
 
 import logo from '../assets/images/logo.svg'
@@ -5,7 +7,7 @@ import building3 from '../assets/images/building3.png'
 import circles from '../assets/images/circles.png'
 import logoBig from '../assets/images/logo-big.svg'
 import logoBigMobile from '../assets/images/logo-big-mobile.svg'
-import gabriel from '../assets/images/gabriel.png'
+import gabriel from '../assets/images/gabriel.jpg'
 
 import ConctactForm from '../components/ContactForm'
 
@@ -23,7 +25,7 @@ const Home = () => {
                 </div>
                 <section className="socials">
                     <a 
-                        href="https://www.facebook.com/Inova-Constructores-109525017849374/"
+                        href="https://www.facebook.com/"
                         target="_blank" rel="noreferrer"
                     >
                         <i className="bi bi-facebook" />
@@ -35,7 +37,7 @@ const Home = () => {
                         <i className="bi bi-whatsapp" />
                     </a>
                     <a 
-                        href="https://www.instagram.com/inova_constructores/" 
+                        href="https://www.instagram.com/" 
                         target="_blank" rel="noreferrer"
                     >
                         <i className="bi bi-instagram" />
@@ -75,7 +77,7 @@ const Home = () => {
                         </span>
                         <span>
                             <strong>3. &nbsp;</strong>
-                            Construcción: Dirección Técninca.
+                            Construcción: Dirección Técnica.
                         </span>
                         <span>
                             <strong>4. &nbsp;</strong>
@@ -93,7 +95,8 @@ const Home = () => {
                         <label>QUIÉNES SOMOS</label>
                         <h2>Misión:</h2>
                         <p>Ofrecer servicos arquitectónicos de alta gama que satisfagan las necesidades del cliente a precios competitivos dentro del mercado.</p>
-                        <button>LEER MÁS</button>
+                        {/* <button>LEER MÁS</button> */}
+                        <Link className="rrd-link" to="/">LEER MÁS</Link>
                     </div>
                 </div>
                 <div className="col-lg">

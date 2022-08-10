@@ -7,19 +7,20 @@ const Layout = ({ children }) => {
     
     const location = useLocation()
     
-    const pathsWithFooter = [
-        '/',
-        '/quienes-somos',
-        '/proyectos',
-        '/servicios',
-        '/galeria',
-        '/contactos',
-    ]
+    // const pathsWithFooter = [
+    //     '/',
+    //     '/quienes-somos',
+    //     '/proyectos',
+    //     '/servicios',
+    //     '/galeria',
+    //     '/contactos',
+    // ]
 
     return <>
-        <Navbar />
+        <Navbar path={location.pathname} />
         {children}
-        { pathsWithFooter.includes(location.pathname) && <Footer /> }
+        <Footer path={location.pathname} />
+        {/* { pathsWithFooter.includes(location.pathname) && <Footer path={location.pathname} /> } */}
     </>
 }
 

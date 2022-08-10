@@ -1,4 +1,4 @@
-import gabriel from '../assets/images/gabriel.png'
+import gabriel from '../assets/images/gabriel.jpg'
 
 
 const QuienesSomos = () => {
@@ -17,7 +17,7 @@ const QuienesSomos = () => {
                 <div className="row mis-vis" id="row-correction">
                     <div className="col-lg col-md-12">
                         <label>Misión:</label>
-                        <p>Ofrecer servicios arquitectónicos de alta gama que satisgafan las necesidades del cliente a precios competitivos dentro del mercado.</p>
+                        <p>Ofrecer servicios arquitectónicos de alta gama que satisfagan las necesidades del cliente a precios competitivos dentro del mercado.</p>
                     </div>
                     <div className="col-lg col-md-12">
                         <label>Visión:</label>

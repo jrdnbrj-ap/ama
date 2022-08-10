@@ -1,13 +1,27 @@
-import building3 from '../assets/images/building3.png'
+import galeria1 from '../assets/images/galeria/galeria1.jpg'
+import galeria2 from '../assets/images/galeria/galeria2.jpg'
+import galeria3 from '../assets/images/galeria/galeria3.jpg'
+import galeria4 from '../assets/images/galeria/galeria4.png'
+import galeria5 from '../assets/images/galeria/galeria5.jpg'
+import galeria6 from '../assets/images/galeria/galeria6.jpg'
+import galeria7 from '../assets/images/galeria/galeria7.png'
+import galeria8 from '../assets/images/galeria/galeria8.jpg'
+import galeria9 from '../assets/images/galeria/galeria9.jpg'
+import galeria10 from '../assets/images/galeria/galeria10.jpg'
+import galeria11 from '../assets/images/galeria/galeria11.jpg'
+import galeria12 from '../assets/images/galeria/galeria12.jpg'
+import galeria13 from '../assets/images/galeria/galeria13.jpg'
+import galeria14 from '../assets/images/galeria/galeria14.png'
+import galeria15 from '../assets/images/galeria/galeria15.jpg'
 
 import { useState } from 'react'
 
 import GaleryModal from '../components/GaleryModal'
 
 const images = [
-    building3, building3, building3, building3, building3,
-    building3, building3, building3, building3, building3,
-    building3, building3, building3, building3, building3,
+    galeria1, galeria2, galeria3, galeria4, galeria5, 
+    galeria6, galeria7, galeria8, galeria9, galeria10, 
+    galeria11, galeria12, galeria13, galeria14, galeria15
 ]
 
 const Galeria = () => {

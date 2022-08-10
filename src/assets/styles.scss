@@ -52,8 +52,20 @@ html, body {
 /* HEADER HEADER */
 
 .navbar-container {
-    background-color: rgba(0, 0, 0, 0.5) !important;
+    background-color: #182A43;
 }
+
+#color-blue {
+    background-color: #E3D6A6;
+    .navbar-nav .nav-item a {
+        color: #182A43;
+        span {
+            color: #182A43;
+        }
+    }
+}
+
+
 
 .nav-item {
     margin-left: 0.5rem;
@@ -491,7 +503,7 @@ html, body {
                 color: #182A43;
                 margin-left: 2rem;
             }
-            button {
+            .rrd-link {
                 font-family: Poppins SemiBold;
                 font-size: 1.2rem;
                 color: #182A43;
@@ -810,8 +822,8 @@ html, body {
     background-color: #FFF;
     border: 0;
     border-radius: 3px;
-    border-bottom-left-radius: 38px;
-    border-top-right-radius: 18px;
+    // border-bottom-left-radius: 38px;
+    // border-top-right-radius: 18px;
     padding: 0.8rem 2.5rem;
     font-family: Poppins Light;
     font-size: 1.2rem;
@@ -852,8 +864,8 @@ html, body {
         height: 8.5rem;
     }
     .home-form form button {
-        border-bottom-left-radius: 38px;
-        border-top-right-radius: 18px;
+        // border-bottom-left-radius: 38px;
+        // border-top-right-radius: 18px;
         padding: 0.5rem 2rem;
         font-size: 1.5rem;
     }
@@ -930,8 +942,8 @@ html, body {
     background-color: #FFF;
     border: 0;
     border-radius: 3px;
-    border-bottom-left-radius: 38px;
-    border-top-right-radius: 18px;
+    // border-bottom-left-radius: 38px;
+    // border-top-right-radius: 18px;
     padding: 0.8rem 2.5rem;
     font-family: Poppins Light;
     font-size: 1.2rem;
@@ -968,8 +980,8 @@ html, body {
         height: 8.5rem;
     }
     .home-form-2 form button {
-        border-bottom-left-radius: 38px;
-        border-top-right-radius: 18px;
+        // border-bottom-left-radius: 38px;
+        // border-top-right-radius: 18px;
         padding: 0.5rem 2rem;
         font-size: 1.5rem;
     }
@@ -998,6 +1010,24 @@ html, body {
     padding: 5%;
     font-family: Poppins Light;
     font-size: 1.2rem;
+}
+
+.color-blue {
+    background-color: #182A43 !important;
+}
+
+.color-light {
+    background-color: #E3D6A6 !important;
+    color: #182A43 !important;
+    .rrd-link {
+        color: #182A43 !important;
+    }
+    span {
+        color: #182A43 !important;
+    }
+    i {
+        color: #182A43 !important;
+    }
 }
 
 .footer .col-lg {

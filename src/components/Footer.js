@@ -1,14 +1,32 @@
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import logo2 from '../assets/images/logo-big-white.svg'
+import logo3 from '../assets/images/logo-big-blue.svg'
 
 
-const Footer = () => {
+const Footer = ({ path }) => {
+
+    const [logoSrc, setLogoSrc] = useState('')
+    const [colorId, setColorId] = useState('')
+
+    useEffect(() => {
+        if (path === '/quienes-somos') {
+            setLogoSrc(logo2)
+            setColorId('color-blue')
+        } else if(path === '/contactos') {
+            setLogoSrc(logo3)
+            setColorId('color-light')
+        } else {
+            setLogoSrc(logo2)
+            setColorId('')
+        }
+    }, [path])
 
     return <>
-        <section className="row footer" id="row-correction">
+        <section className={`row footer ${colorId}`} id="row-correction">
             <section className="col-lg col-12 col-sm-6">
-                <img src={logo2} alt="logo" />
+                <img src={logoSrc} alt="logo" />
             </section>
             <section className="col-lg col-12 col-sm-6">
                 <h3>ACERCA DE NOSOTROS</h3>
@@ -22,7 +40,7 @@ const Footer = () => {
             <section className="col-lg col-12 col-sm-6">
                 <h3>CONTÁCTENOS</h3>
                 <a 
-                    href="https://wa.me/5930969616579"
+                    href="https://wa.me/593969626579"
                     target="_blank" rel="noreferrer"
                 >
                     <span>+593 96 962 6579</span>
@@ -32,19 +50,19 @@ const Footer = () => {
             <section className="col-lg col-12 col-sm-6">
                 <h3>CAPACITACIONES</h3>
                 <a 
-                    href="https://wa.me/5930969616579"
+                    href="https://wa.me/593969626579"
                     target="_blank" rel="noreferrer"
                 >
                     <i className="bi bi-whatsapp" />
                 </a>
                 <a 
-                    href="https://www.facebook.com/Inova-Constructores-109525017849374/"
+                    href="https://www.facebook.com/"
                     target="_blank" rel="noreferrer"
                 >
                     <i className="bi bi-facebook" />
                 </a>
                 <a 
-                    href="https://www.instagram.com/inova_constructores/" 
+                    href="https://www.instagram.com/" 
                     target="_blank" rel="noreferrer"
                 >
                     <i className="bi bi-instagram" />
