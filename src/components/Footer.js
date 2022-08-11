@@ -45,7 +45,7 @@ const Footer = ({ path }) => {
                 >
                     <span>+593 96 962 6579</span>
                 </a>
-                <span>alvarezmoralesarquitectura@gmail.com</span>
+                <span className="email">alvarezmoralesarquitectura@gmail.com</span>
             </section>
             <section className="col-lg col-12 col-sm-6">
                 <h3>CAPACITACIONES</h3>

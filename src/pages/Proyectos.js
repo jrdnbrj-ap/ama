@@ -41,7 +41,7 @@ const Proyectos = () => {
                     </div>
                 </div>
                 <div className="row proy-3" id="row-correction">
-                    <div className="col-lg">
+                    <div className="col-lg order-last">
                         <div className="__info">
                             <label>FEDIMETAL:</label>
                             <p>Proyecto Centro de Innovación en Tecnologías Constructivas y Agrícolas</p>
@@ -50,7 +50,7 @@ const Proyectos = () => {
                             <p>Como concepto de adopto una de las cualidades más importantes del acero como eje estructurante, su maleabilidad. Esta propiedad vuelve un material sumamente versátil, con variadas posibilidades de aplicación, por lo tanto, desde la concepción volumétrica del conjunto, fueron las dinámicas del lugar las que fueron moldeando los diferentes espacios.</p>
                         </div>
                     </div>
-                    <div className="col-lg">
+                    <div className="col-lg order-first">
                         <img src={proy3} alt="building" />
                     </div>
                 </div>

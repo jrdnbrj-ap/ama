@@ -7,11 +7,6 @@ import 'bootstrap/dist/js/bootstrap.js'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import './assets/styles.scss'
 
-// import AOS from 'aos'
-// import 'aos/dist/aos.css'
-
-
-// AOS.init()
 
 ReactDOM.render(
     <React.StrictMode>
