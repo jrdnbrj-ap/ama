@@ -94,7 +94,7 @@ const Home = () => {
                     <div className="mision mobile-hidden">
                         <label>QUIÉNES SOMOS</label>
                         <h2>Misión:</h2>
-                        <p>Ofrecer servicos arquitectónicos de alta gama que satisfagan las necesidades del cliente a precios competitivos dentro del mercado.</p>
+                        <p>Ofrecer servicos arquitectónicos de alta gama que satisfacen las necesidades del cliente a precios competitivos dentro del mercado.</p>
                         {/* <button>LEER MÁS</button> */}
                         <Link className="rrd-link" to="/">LEER MÁS</Link>
                     </div>

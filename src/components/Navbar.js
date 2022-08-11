@@ -31,7 +31,7 @@ const Navbar = ({ path }) => {
                         <img src={logoSrc} className="logo-nav" alt="Maere Logo" />
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                        <i className="bi bi-list" />
+                        <i className="bi bi-list" id={colorId} />
                     </button>
                     <div className="collapse navbar-collapse" id="navbarText">
                         <ul className="navbar-nav ms-auto me-5 mb-2 mb-lg-0">

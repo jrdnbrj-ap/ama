@@ -17,7 +17,7 @@ const QuienesSomos = () => {
                 <div className="row mis-vis" id="row-correction">
                     <div className="col-lg col-md-12">
                         <label>Misión:</label>
-                        <p>Ofrecer servicios arquitectónicos de alta gama que satisfagan las necesidades del cliente a precios competitivos dentro del mercado.</p>
+                        <p>Ofrecer servicios arquitectónicos de alta gama que satisfacen las necesidades del cliente a precios competitivos dentro del mercado.</p>
                     </div>
                     <div className="col-lg col-md-12">
                         <label>Visión:</label>
