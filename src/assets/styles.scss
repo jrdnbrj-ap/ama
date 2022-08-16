@@ -517,6 +517,10 @@ html, body {
                 padding: 0.1rem 1rem;
                 border-bottom-left-radius: 3px;
                 border-bottom-right-radius: 3px;
+                text-decoration: none;
+                &:hover {
+                    color: #070d14;
+                }
             }
         }
         img {

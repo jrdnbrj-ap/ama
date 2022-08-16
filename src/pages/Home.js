@@ -95,15 +95,14 @@ const Home = () => {
                         <label>QUIÉNES SOMOS</label>
                         <h2>Misión:</h2>
                         <p>Ofrecer servicos arquitectónicos de alta gama que satisfacen las necesidades del cliente a precios competitivos dentro del mercado.</p>
-                        {/* <button>LEER MÁS</button> */}
-                        <Link className="rrd-link" to="/">LEER MÁS</Link>
+                        <Link className="rrd-link" to="/quienes-somos">LEER MÁS</Link>
                     </div>
                 </div>
                 <div className="col-lg">
                     <img src={gabriel} alt="circles" />
                 </div>
             </section>
-            <ConctactForm onHome />
+            <ConctactForm />
         </>
     )
 }
